@@ -1,0 +1,143 @@
+/* global styling */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img{
+    display: block;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    height: 100vh;
+    background-color: hsl(216, 55%, 11%);
+    font-family: 'Outfit', sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* end global styling */
+#card{
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+/* start header */
+header{
+    position: relative;
+    max-width: 300px;
+
+}
+header img{
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+header img, header .overlay{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+header .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(178, 100%, 50%, 0.5);
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+}
+.overlay img{
+    width: 50px;
+}
+.overlay:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+/* end header */
+/* start container */
+.container h1{
+    line-height: 3;
+    font-weight: 400;
+}
+.container p{
+    color: hsl(216, 46%, 69%);
+}
+.container .content{
+    margin: 15px 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid hsla(0, 0%, 97%, 0.1);
+}
+.container .content .item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.container .content .item span{
+    padding: 5px;
+    font-weight: 400px;
+    color: hsl(216, 46%, 69%);
+}
+.container .content .item:first-of-type span{
+    color: hsl(178, 100%, 50%);
+}
+/* end container */
+/* start footer */
+footer{
+    display: flex;
+    align-items: center;
+}
+footer p{
+    margin-left: 20px;
+    font-size: 18px;
+}
+footer p span{
+    color: hsl(216, 46%, 69%);
+}
+footer img{
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+footer a:hover, .container h1:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+/* end footer */
