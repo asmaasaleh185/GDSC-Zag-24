@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JavaScript</title>
+    <script>
+      // Code One
+      /*
+        This code will not work because it's in the head section 
+        before the element with id="el" is defined.
+      */
+      document.getElementById("el").style.color = "red";
+    </script>
+    <script>
+      // Code Two
+      /*
+        this code will work successfully because window.onload 
+        ensures that javascript code inside it run only after 
+        html document has finished loading.
+      */ 
+      window.onload = function () {
+        document.getElementById("el").style.color = "red";
+      };
+    </script>
+  </head>
+  <body>
+    <h1 id="el">Page Title</h1>
+    <script>
+      // Code Three
+      /*
+        this code will work successfully because it's placed at 
+        the end of body section after element with id="el"
+        has been defined.
+      */ 
+      document.getElementById("el").style.color = "red";
+    </script>
+  </body>
+</html>
