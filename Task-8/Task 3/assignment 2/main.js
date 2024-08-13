@@ -7,8 +7,9 @@ window.onload = function(){
     function updatedClass(){
         classesListDiv.innerHTML = '';
         let classes = currentDiv.className.split(" ").sort();
-        if(classes.length === 0){
-            currentDiv.textContent = "No Classes To Show";
+        // console.log(classes)
+        if(currentDiv.classList.length === 0){
+            classesListDiv.textContent = "No Classes To Show";
         }
         else {
             classes.forEach(className => {
